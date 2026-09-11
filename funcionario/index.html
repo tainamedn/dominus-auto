@@ -1,1 +1,241 @@
-Ana Cruz - Funcionário 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dominus Auto - Sobre Nós</title>
+    <style>
+        /* Importando fonte similar à da imagem */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #000;
+        }
+
+        /* --- CABEÇALHO (HEADER) --- */
+        header {
+            background-color: #0d3b45; /* Azul escuro */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            color: #fff;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-icon {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2px;
+            width: 30px;
+            height: 30px;
+        }
+
+        .logo-icon div {
+            background-color: #d1b06b; /* Dourado */
+            border-radius: 50%;
+        }
+        .logo-icon div:nth-child(1) { border-radius: 0; background-color: #71a9a8; } /* Quadrado azul claro */
+        .logo-icon div:nth-child(3) { border-radius: 0; } /* Quadrado dourado */
+
+        .logo-text {
+            font-size: 20px;
+            font-weight: 300;
+            letter-spacing: 2px;
+            color: #d1b06b;
+            display: flex;
+            flex-direction: column;
+            line-height: 1;
+        }
+        .logo-text span {
+            font-size: 8px;
+            letter-spacing: 4px;
+            text-align: center;
+            margin-top: 2px;
+        }
+
+        nav {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+            padding-bottom: 5px;
+        }
+
+        nav a.active {
+            border-bottom: 3px solid #d1b06b;
+        }
+
+        .header-profile img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        /* --- CONTEÚDO PRINCIPAL (MAIN) --- */
+        main {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px 80px;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 60px;
+        }
+
+        .col {
+            flex: 1;
+        }
+
+        h1 {
+            color: #bd9b4e; /* Dourado escuro */
+            font-size: 42px;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+        }
+
+        /* Coluna Esquerda: Sobre Nós */
+        .sobre-nos-content h2 {
+            font-size: 18px;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .sobre-nos-content p {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .sobre-nos-content .missao-texto {
+            margin-left: 15px; /* Leve recuo no texto da missão */
+        }
+
+        /* Coluna Direita: Fundadoras(es) */
+        .founders-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .founder-card {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            width: 100%;
+            max-width: 350px; /* Alinha os cards ao centro da coluna */
+        }
+
+        .founder-card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 20px; /* Bordas arredondadas estilo "squircle" */
+            object-fit: cover;
+            background-color: #ccc;
+        }
+
+        .founder-card span {
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <div class="logo-icon">
+                <div class="header-profile">
+            <img src="https://via.placeholder.com/40" alt="logo">
+            </div>
+            <h3 class="texto-degrade">DOMINUS AUTO</h3>
+            </div>
+        </div>
+       
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Veículos</a>
+            <a href="#">Suporte</a>
+            <a href="#" class="active">Sobre Nós</a>
+        </nav>
+
+        <div class="header-profile">
+            <img src="https://via.placeholder.com/40" alt="Perfil">
+        </div>
+    </header>
+
+    <main>
+       
+        <div class="col sobre-nos-content">
+            <h1>SOBRE NÓS</h1>
+           
+            <h2>O Extraordinário Como Padrão</h2>
+           
+            <p>Na Dominus Auto, acreditamos que a jornada importa tanto quanto o destino. Nascemos para atender a um público exigente que não busca apenas locação de veículos, mas sim uma extensão de seu estilo de vida e conquistas.</p>
+           
+            <p>Gerenciamos uma frota própria e estritamente selecionada dos superesportivos, sedans executivos e SUVs mais desejados do mundo.</p>
+           
+            <p>Com um modelo de atendimento baseado na alta hotelaria, oferecemos uma experiência sob medida: desde a entrega VIP onde você estiver até o suporte de um concierge dedicado 24h.</p>
+           
+            <h2>Nossa Missão:</h2>
+            <p class="missao-texto">Entregar potência, segurança e o mais puro luxo automotivo, transformando cada viagem em uma experiência memorável.</p>
+        </div>
+
+        <div class="col">
+            <h1>Fundadoras(es)</h1>
+           
+            <div class="founders-list">
+                <div class="founder-card">
+                    <img src="https://via.placeholder.com/80" alt="Matheo Medeiros Nunes">
+                    <span>Matheo Medeiros Nunes</span>
+                </div>
+               
+                <div class="founder-card">
+                    <img src="https://via.placeholder.com/80" alt="Ana Clara Cruz Alves">
+                    <span>Ana Clara Cruz Alves</span>
+                </div>
+               
+                <div class="founder-card">
+                    <img src="https://via.placeholder.com/80" alt="Natália Santos Barbosa">
+                    <span>Natália Santos Barbosa</span>
+                </div>
+               
+                <div class="founder-card">
+                    <img src="https://via.placeholder.com/80" alt="Yasmin Vidal Pereira">
+                    <span>Yasmin Vidal Pereira</span>
+                </div>
+               
+                <div class="founder-card">
+                    <img src="https://via.placeholder.com/80" alt="Nicollas Gama Dias">
+                    <span>Nicollas Gama Dias</span>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+</html>
