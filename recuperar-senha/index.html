@@ -1,1 +1,76 @@
-Tainá - recuperar senha 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dominus Auto - Recuperar Senha</title>
+    <style>
+        :root {
+            --branco-puro: #FFFFFF;
+            --azul-soft: #529EAF;
+            --azul-petroleo: #06333E;
+            --bege-dourado: #D4C38B;
+            --preto-dominus: #2C2C2C;
+            --fundo-input: #EFECE6;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
+        body { background-color: var(--branco-puro); height: 100vh; display: flex; flex-direction: column; overflow: hidden; }
+
+        header { background-color: var(--azul-petroleo); display: flex; justify-content: space-between; align-items: center; padding: 15px 50px; height: 80px; }
+        .logo-header { color: var(--branco-puro); font-weight: bold; font-size: 14px; display: flex; align-items: center; gap: 10px; }
+        nav { display: flex; gap: 30px; }
+        nav a { color: var(--branco-puro); text-decoration: none; font-size: 16px; }
+        .btn-login-header { background-color: var(--bege-dourado); color: var(--preto-dominus); text-decoration: none; padding: 10px 25px; border-radius: 4px; font-weight: bold; }
+
+        .main-container { display: flex; flex: 1; height: calc(100vh - 80px); }
+        .col-esquerda { width: 50%; padding: 60px 10%; display: flex; flex-direction: column; justify-content: center; }
+        .col-direita { width: 50%; background-image: url('https://unsplash.com'); background-size: cover; background-position: center; display: flex; justify-content: center; align-items: center; position: relative; }
+        .col-direita::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(6, 51, 62, 0.4); }
+
+        .marca-titulo { font-size: 42px; color: var(--bege-dourado); font-weight: bold; margin-bottom: 10px; }
+        .subtitulo { font-size: 28px; color: var(--preto-dominus); font-weight: bold; margin-bottom: 15px; }
+        .descricao { color: #666; margin-bottom: 30px; font-size: 15px; line-height: 1.4; }
+        .input-group { margin-bottom: 25px; }
+        .input-group label { display: block; margin-bottom: 8px; color: var(--preto-dominus); }
+        .input-with-icon { position: relative; display: flex; align-items: center; }
+        .input-with-icon span { position: absolute; left: 15px; }
+        .input-with-icon input { width: 100%; padding: 15px 15px 15px 45px; border: 1px solid var(--preto-dominus); border-radius: 12px; background-color: var(--fundo-input); }
+        
+        .btn-recuperar { background-color: var(--azul-petroleo); color: var(--branco-puro); border: none; padding: 15px; width: 100%; font-size: 16px; font-weight: bold; border-radius: 12px; cursor: pointer; margin-bottom: 25px; transition: 0.3s; }
+        .btn-recuperar:hover { background-color: var(--azul-soft); }
+        .link-voltar { color: var(--preto-dominus); text-decoration: underline; font-weight: bold; font-size: 15px; }
+        
+        .logo-central { position: relative; z-index: 10; text-align: center; color: var(--branco-puro); }
+        .logo-central h1 { font-size: 32px; letter-spacing: 4px; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-header"><span>DOMINUS<br>AUTO</span></div>
+        <nav><a href="../index.html">Home</a><a href="#">Veículos</a><a href="#">Suporte</a><a href="#">Sobre Nós</a></nav>
+        <a href="../index.html" class="btn-login-header">Fazer Login</a>
+    </header>
+    <div class="main-container">
+        <div class="col-esquerda">
+            <h2 class="marca-titulo">DOMINUS AUTO</h2>
+            <h3 class="subtitulo">Recuperar Senha</h3>
+            <p class="descricao">Insira o e-mail associado à sua conta. Enviaremos um código de verificação para você redefinir sua credencial com segurança.</p>
+            
+            <form>
+                <div class="input-group">
+                    <label>E-mail Cadastrado:</label>
+                    <div class="input-with-icon"><input type="email" required></div>
+                </div>
+                <button type="submit" class="btn-recuperar">Enviar Código de Recuperação</button>
+               
+                <a href="../index.html" class="link-voltar">Voltar para o Login</a>
+            </form>
+        </div>
+        <div class="col-direita">
+            <div class="logo-central"><h1>DOMINUS<br>AUTO</h1></div>
+        </div>
+    </div>
+</body>
+</html>
+
