@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+           <head>
+           <meta charset="UTF-8">
+                         <title>Dominus Auto — Home</title>
+                         <link rel="preconnect" href="https://fonts.googleapis.com">
+                                   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+                                           <style>
+                                           :
+root{
+--teal-petroleo:
+#06333E;
+--teal-soft:
+#529EAF;
+--gold:
+#C6A253;
+--gold-dark:
+#B08F3F;
+--cream:
+#EFE9DA;
+--white:
+#FFFFFF;
+--gray-bg:
+#EFEFEF;
+--text-dark:
+#1C1C1C;
+--text-gray:
+#4A4A4A;
+}
+* {box-sizing:border-box; margin:0; padding:0;}
+body{
+font-family:'Inter'
+, sans-serif;
+background:
+#dcdcdc;
+color:
+var(--text-dark);
+}
+
+.section-label{
+max-width:1456px;
+margin:0 auto;
+padding:36px 40px 14px;
+font-family:'Inter'
+,sans-serif;
+font-size:13px;
+letter-spacing:
+.08em;
+color:
+#6b6b6b;
+text-transform:
+uppercase;
+}
+
+.page{
+width:1456px;
+max-width:100%;
+margin:0 auto 48px;
+background:
+var(--white);
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+overflow:
+hidden;
+}
+
+/* ---------- HEADER ---------- */
+header{
+background:
+var(--teal-petroleo);
+height:88px;
+display:
+flex;
+align-items:
+center;
+justify-content:
+space-between;
+padding:0 44px;
+}
+.brand{
+display:
+flex;
+align-items:
+center;
+gap:14px;
+}
+.brand-icon{
+width:38px;
+height:38px;
+display:
+grid;
+grid-template-columns:1fr 1fr;
+grid-template-rows:1fr 1fr;
+flex-shrink:0;
+}
+.brand-icon span{display:block;}
+.bi-tl{background:var(--gold); border-radius:2px 0 0 0;}
+.bi-tr{background:var(--cream); border-radius:100% 0 0 0;}
+.bi-bl{background:var(--teal-soft); border-radius:0 0 0 100%;}
+.bi-br{background:var(--gold); border-radius:0 0 100% 0;}
+.brand-text{display:flex; flex-direction:column; line-height:1;}
+.brand-text .b1{
+font-family:'Poppins'
+,sans-serif;
+font-weight:500;
+font-size:19px;
+letter-spacing:
+.22em;
+color:
+var(--gold);
+}
+.brand-text .b2{
+font-family:'Poppins'
+,sans-serif;
+font-weight:400;
+font-size:9px;
+letter-spacing:
+.32em;
+color:
+#9AA9AC;
+margin-top:4px;
+}
+
+nav.mainnav{
+display:
+flex;
+align-items:
+center;
+gap:40px;
+}
+nav.mainnav a{
+color:
+var(--white);
+text-decoration:
+none;
+font-family:'Poppins'
+,sans-serif;
+font-size:15px;
+font-weight:400;
+padding-bottom:6px;
+position:
+relative;
+}
+nav.mainnav a.active{
+border-bottom:2px solid var(--gold);
+}
+
+.header-right{
+display:
+flex;
+align-items:
+center;
+gap:16px;
+}
+.btn-login{
+background:
+var(--gold);
+color:
+var(--teal-petroleo);
+font-family:'Poppins'
+,sans-serif;
+font-weight:600;
+font-size:14px;
+border:
+none;
+padding:11px 22px;
+border-radius:6px;
+cursor:
+pointer;
+}
+.avatar-generic{
+width:38px;
+height:38px;
+border-radius:50%;
+background:
+#D8D8D8;
+display:
+flex;
+align-items:
+center;
+justify-content:
+center;
+}
+.avatar-generic svg{width:20px; height:20px; fill:#8b8b8b;}
+.avatar-photo{
+width:40px;
+height:40px;
+border-radius:50%;
+object-fit:
+cover;
+border:2px solid var(--white);
+}
+
+/* ---------- HERO ---------- */
+.hero{
+display:
+grid;
+grid-template-columns:57% 43%;
+min-height:660px;
+}
+.hero-left{
+background:
+var(--gray-bg);
+padding:56px 64px 40px;
+display:
+flex;
+flex-direction:
+column;
+gap:22px;
+}
+.hero-left h1{
+font-family:'Poppins'
+,sans-serif;
+font-weight:700;
+font-size:32px;
+line-height:1.32;
+color:
+var(--text-dark);
+}
+.hero-left p{
+font-family:'Inter'
+,sans-serif;
+font-size:15px;
+line-height:1.65;
+color:
+var(--text-gray);
+max-width:480px;
+}
+.btn-gold{
+align-self:
+flex-start;
+background:
+var(--gold);
+color:
+var(--white);
+font-family:'Poppins'
+,sans-serif;
+font-weight:500;
+font-size:14px;
+border:
+none;
+padding:14px 26px;
+border-radius:6px;
+cursor:
+pointer;
+}
+
+.feature-row{
+display:
+flex;
+gap:16px;
+margin-top:6px;
+}
+.feature-box{
+background:
+var(--teal-soft);
+color:
+var(--white);
+width:150px;
+height:150px;
+border-radius:6px;
+display:
+flex;
+flex-direction:
+column;
+align-items:
+center;
+justify-content:
+center;
+gap:10px;
+text-align:
+center;
+font-family:'Inter'
+,sans-serif;
+font-size:13px;
+padding:10px;
+}
+.feature-box svg{width:34px; height:34px; stroke:var(--white); fill:none; stroke-width:1.6;}  .search-bar{
+background:
+var(--teal-petroleo);
+border-radius:6px;
+padding:22px 26px;
+display:
+flex;
+align-items:
+flex-end;
+gap:14px;
+margin-top:10px;
+}
+.search-field{display:flex; flex-direction:column; gap:8px; flex:1;}
+.search-field label{
+color:
+var(--white);
+font-family:'Poppins'
+,sans-serif;
+font-weight:600;
+font-size:16px;
+}
+.search-field .input-wrap{
+background:
+var(--white);
+border-radius:5px;
+padding:10px 12px;
+display:
+flex;
+align-items:
+center;
+gap:8px;
+}
+.search-field .input-wrap svg{width:15px; height:15px; stroke:#333; fill:none; stroke-width:1.6; flex-shrink:0;}
+.search-field .input-wrap span{
+font-size:13px;
+color:
+#7a7a7a;
+font-family:'Inter'
+,sans-serif;
+}
+.search-btn{
+background:
+var(--gold);
+border:
+none;
+border-radius:5px;
+width:44px;
+height:44px;
+display:
+flex;
+align-items:
+center;
+justify-content:
+center;
+cursor:
+pointer;
+flex-shrink:0;
+}
+.search-btn svg{width:18px; height:18px; stroke:var(--white); fill:none; stroke-width:2;}
+
+.hero-right{
+position:
+relative;
+background:
+linear-gradient(180deg, rgba(0,0,0,.15), rgba(0,0,0,.55)),
+url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=80') center/cover no-repeat;
+}
+.hero-right .brand-watermark{
+position:
+absolute;
+left:36px;
+bottom:30px;
+display:
+flex;
+align-items:
+center;
+gap:12px;
+}
+.hero-right .brand-watermark .brand-icon span{opacity:.95;}
+.hero-right .brand-watermark .b1{color:var(--cream); font-size:26px; letter-spacing:.24em;}
+.hero-right .brand-watermark .b2{color:#c9c9c9; font-size:10px;}
+
+/* ---------- USER DROPDOWN (logged in) ---------- */
+.user-menu{
+position:
+absolute;
+top:0;
+right:0;
+bottom:0;
+width:44%;
+background:
+var(--teal-soft);
+padding:36px 34px;
+display:
+flex;
+flex-direction:
+column;
+gap:0;
+}
+.user-menu-item{
+display:
+flex;
+align-items:
+center;
+gap:14px;
+padding:16px 0;
+border-bottom:1px solid rgba(255,255,255,.35);
+cursor:
+pointer;
+}
+.user-menu-item:
+last-child{border-bottom:none;}
+.user-menu-item svg{width:20px; height:20px; stroke:var(--white); fill:none; stroke-width:1.6; flex-shrink:0;}
+.user-menu-item span{
+color:
+var(--white);
+font-family:'Inter'
+,sans-serif;
+font-size:15px;
+}
+
+@media(max-width:1000px) {
+.hero{grid-template-columns:1fr;}
+.hero-right{min-height:360px;}
+.feature-row{flex-wrap:wrap;}
+}
+</style>
+</head>
+<body><!-- ============================================================ -->
+<!-- HOME — deslogado -->
+<!-- ============================================================ -->
+<div class="section-label">Home — visitante</div>
+<div class="page">
+
+  <header>
+    <div class="brand">
+      <div class="brand-icon">
+        <span class="bi-tl"></span><span class="bi-tr"></span>
+        <span class="bi-bl"></span><span class="bi-br"></span>
+      </div>
+      <div class="brand-text">
+        <span class="b1">DOMINUS</span>
+        <span class="b2">AUTO</span>
+      </div>
+    </div>
+
+    <nav class="mainnav">
+      <a href="#" class="active">Home</a>
+      <a href="#">Veículos</a>
+      <a href="#">Suporte</a>
+      <a href="#">Sobre Nós</a>
+    </nav>
+
+    <div class="header-right">
+      <button class="btn-login">Fazer Login</button>
+      <div class="avatar-generic">
+        <svg viewBox="0 0 24 24"><path d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5Zm0 2c-4.4 0-8 2.2-8 5v1h16v-1c0-2.8-3.6-5-8-5Z"/></svg>
+      </div>
+    </div>
+  </header>
+
+  <div class="hero">
+    <div class="hero-left">
+      <h1>A potência que impressiona.<br>O luxo que você merece.</h1>
+      <p>A frota mais exclusiva de superesportivos e SUVs premium ao seu alcance. Atendimento personalizado com entrega onde você estiver.</p>
+      <button class="btn-gold">Conheça nossos veículos!</button>
+
+      <div class="feature-row">
+        <div class="feature-box">
+          <svg viewBox="0 0 24 24"><path d="M12 21s-7-6.1-7-11.5A7 7 0 0 1 19 9.5C19 14.9 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.3"/></svg>
+          <span>Entrega Vip</span>
+        </div>
+        <div class="feature-box">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          <span>Suporte 24h</span>
+        </div>
+        <div class="feature-box">
+          <svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 8.9 8 11 4.6-2.1 8-6 8-11V5Z"/><path d="m9 12 2 2 4-4"/></svg>
+          <span>Seguro<br>Premium</span>
+        </div>
+      </div>
+
+      <div class="search-bar">
+        <div class="search-field">
+          <label>Localização</label>
+          <div class="input-wrap">
+            <svg viewBox="0 0 24 24"><path d="M12 21s-6-5.4-6-10a6 6 0 1 1 12 0c0 4.6-6 10-6 10Z"/><circle cx="12" cy="11" r="2"/></svg>
+            <span>Estado - Cidade</span>
+          </div>
+        </div>
+        <div class="search-field">
+          <label>Retirada</label>
+          <div class="input-wrap">
+            <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+            <span>dd/mm/aaaa</span>
+          </div>
+        </div>
+        <div class="search-field">
+          <label>Devolução</label>
+          <div class="input-wrap">
+            <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+            <span>dd/mm/aaaa</span>
+          </div>
+        </div>
+        <button class="search-btn">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="brand-watermark">
+        <div class="brand-icon">
+          <span class="bi-tl"></span><span class="bi-tr"></span>
+          <span class="bi-bl"></span><span class="bi-br"></span>
+        </div>
+        <div class="brand-text">
+          <span class="b1">DOMINUS</span>
+          <span class="b2">AUTO</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- ============================================================ -->
+<!-- HOME — logado, menu do usuário aberto -->
+<!-- ============================================================ -->
+<div class="section-label">Home — usuário logado (menu aberto)</div>
+<div class="page">
+
+  <header>
+    <div class="brand">
+      <div class="brand-icon">
+        <span class="bi-tl"></span><span class="bi-tr"></span>
+        <span class="bi-bl"></span><span class="bi-br"></span>
+      </div>
+      <div class="brand-text">
+        <span class="b1">DOMINUS</span>
+        <span class="b2">AUTO</span>
+      </div>
+    </div>
+
+    <nav class="mainnav">
+      <a href="#" class="active">Home</a>
+      <a href="#">Veículos</a>
+      <a href="#">Suporte</a>
+      <a href="#">Sobre Nós</a>
+    </nav>
+
+    <div class="header-right">
+      <img class="avatar-photo" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" alt="Foto de perfil">
+    </div>
+  </header>
+
+  <div class="hero">
+    <div class="hero-left">
+      <h1>A potência que impressiona.<br>O luxo que você merece.</h1>
+      <p>A frota mais exclusiva de superesportivos e SUVs premium ao seu alcance. Atendimento personalizado com entrega onde você estiver.</p>
+      <button class="btn-gold">Conheça nossos veículos!</button>
+
+      <div class="feature-row">
+        <div class="feature-box">
+          <svg viewBox="0 0 24 24"><path d="M12 21s-7-6.1-7-11.5A7 7 0 0 1 19 9.5C19 14.9 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.3"/></svg>
+          <span>Entrega Vip</span>
+        </div>
+        <div class="feature-box">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          <span>Suporte 24h</span>
+        </div>
+        <div class="feature-box">
+          <svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 8.9 8 11 4.6-2.1 8-6 8-11V5Z"/><path d="m9 12 2 2 4-4"/></svg>
+          <span>Seguro<br>Premium</span>
+        </div>
+      </div>
+
+      <div class="search-bar">
+        <div class="search-field">
+          <label>Localização</label>
+          <div class="input-wrap">
+            <svg viewBox="0 0 24 24"><path d="M12 21s-6-5.4-6-10a6 6 0 1 1 12 0c0 4.6-6 10-6 10Z"/><circle cx="12" cy="11" r="2"/></svg>
+            <span>Estado - Cidade</span>
+          </div>
+        </div>
+        <div class="search-field">
+          <label>Retirada</label>
+          <div class="input-wrap">
+            <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+            <span>dd/mm/aaaa</span>
+          </div>
+        </div>
+        <div
