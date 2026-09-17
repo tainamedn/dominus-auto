@@ -1,1 +1,176 @@
-Nicollas Dias - Admin
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dominus Auto - Sobre Nós</title>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://googleapis.com" rel="stylesheet">
+    <style>
+        body {
+            padding: 5px;
+            margin: 0;
+        }
+        .titulo {
+            color: #D4C38B;
+            padding: 10px 0;
+            display: inline-block;
+            margin-left: 16%;
+            font-family: 'Montserrat', 'Poppins', sans-serif;
+            font-weight: bold;
+            font-size: 50px;
+        }
+        .cabecario1 {
+            padding: 20px;
+            display: flex;
+        }
+        .cabecario1 img {
+            max-height: 40px;
+            width: auto;
+        }
+        .cabecario {
+            padding: 20px;
+        }
+        .cabecarioa {
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+            font-family: sans-serif;
+            font-weight: 590;
+        }
+        .cabecarioa.active::after {
+            content: "";
+            display: block;
+            position: relative;
+            bottom: -5px;
+            width: 70%;
+            height: 3px;
+            background-color: #D4C38B;
+            margin: 0 auto;
+            border: 2px;
+        }
+        .perfil {
+            display: flex;
+            padding: 20px;
+            justify-content: flex-end;
+            margin-right:30px;
+        }
+        .menu-nav {
+            display: flex;
+            margin-left:50px;
+            margin-right:auto;
+        }
+        header {
+            background-color: #06333E;
+            height: 65px;
+            display: flex;
+            padding:0 20px;
+            align-items: center;
+        }
+        .texto {
+            max-width: 360px;
+            flex: 2;
+            font-family: 'Inter', sans-serif;
+            font-size: 15px;
+            color: #2C2C2C;
+            font-weight: 600;
+        }
+        .item-tec {
+            display: inline;
+            align-items: center;
+            color:#D4C38B;
+            font-weight:500;
+            margin-left:50px;
+        }
+        .caract-auto{
+            font-family: '', 'Inter', sans-serif;
+            color: #2C2C2C;
+            font-weight:500;
+            margin-left:5%;
+            font-size:15px;
+        }
+        .fichatec {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            margin-left: auto;
+            padding-left: 15%;
+            gap:40px;
+        }
+        .reserva{
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+            font-family: sans-serif;
+            font-weight: 590;
+            background-color:#D4C38B;
+            padding:10px 20px 10px 20px;
+            margin-left:20%;
+        }
+        main {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15%;
+        }
+        .esquerda {
+            flex: 1;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <span class="cabecario1">
+            <a href=""><img src="./logo.png" alt="logo"></a>
+        </span>
+        <nav class="menu-nav">
+            <span class="cabecario">
+                <a class="cabecarioa" href="">Home</a>
+            </span>
+            <span class="cabecario">
+                <a class="cabecarioa active" href="">Veículos</a>
+            </span>
+            <span class="cabecario">
+                <a href="" class="cabecarioa">Suporte</a>
+            </span>
+            <span class="cabecario">
+                <a href="" class="cabecarioa">Sobre Nós</a>
+            </span>
+        </nav>
+        <span class="perfil">
+            <a href=""><img src="" alt="perfil"></a>
+        </span>
+    </header>
+    <main>
+        <section class="esquerda">
+            <img src="" alt="automóvel">
+        </section>
+        <section>
+            <span><h1 class="titulo">Ficha Técnica</h1></span>
+            <div class="fichatec">
+                <div class="linha-tec">
+                    <span class="texto">Marca: </span><span class="item-tec">Mercedes Benz</span>
+                </div>
+                <div>
+                    <span class="texto">Modelo: </span><span class="item-tec">C-Class (W206)</span>
+                </div>
+                <div>
+                    <span class="texto">Versão: </span><span class="item-tec">AMG Line</span>
+                </div>
+                <div>
+                    <span class="texto">Velocidade Máxima: </span><span class="item-tec">250 km/h</span>
+                </div>
+                <div>
+                    <span class="texto">Potência: </span><span class="item-tec">255 hp</span>
+                </div>
+                <div class="caract-auto">
+                    <div>Assento de Couro Premium</div>
+                    <div>Teto Solar Panorâmico</div>
+                </div>
+                <div><a class="reserva" href="">Reservar Veículo</a></div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
