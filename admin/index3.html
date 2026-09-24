@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dominus Auto - Sobre Nós</title>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://googleapis.com" rel="stylesheet">
+    <style>
+        body { 
+          padding: 5px; 
+          margin: 0; 
+          }
+        .titulo { 
+          color: #C5A84F; 
+          padding: 10px 0; 
+          display: inline-block; 
+          margin-left: 7%; 
+          font-family: 'Montserrat', 'Poppins', sans-serif; 
+          font-weight: bold; 
+          font-size: 38px; 
+          }
+        .subtitulo{
+          font-family:'Inter', sans-serif;
+          font-weight:500;
+          margin-left:7%; 
+	  font-size:30px;
+	  gap:; 
+        }
+        .cabecario1 { 
+          padding: 20px; 
+          display: flex; 
+          }
+        .cabecario1 img { 
+          width:auto;
+	  height:60px;
+          }
+        .cabecario { 
+          padding: 20px; }
+        .cabecarioa { 
+          text-decoration: none; 
+          color: white; 
+          font-size: 14px; 
+          font-family: sans-serif; 
+          font-weight: 590; 
+          }
+        .cabecarioa.active::after { 
+          content: ""; 
+          display: block; 
+          position: relative; 
+          bottom: -5px; 
+          width: 70%; 
+          height: 3px; 
+          background-color: #C5A84F; 
+          margin: 0 auto; 
+          border: 2px; 
+          }
+        .perfil { 
+          display: flex; 
+          padding: 20px; 
+          justify-content: flex-end; 
+          margin-right:30px;
+          }
+        .menu-nav { 
+          display: flex; 
+          }
+        header { 
+          background-color: #06333E; 
+          height: 65px; 
+          display: flex; 
+          padding:0 20px;
+          align-items: center; 
+          justify-content: space-between;
+          }
+        .texto { 
+          max-width: 200px; 
+          flex: 2; 
+          font-family: 'Inter', sans-serif; 
+          font-size: 13px; 
+          color: #2C2C2C; 
+          font-weight: 400;
+          margin-left:9%;
+	  margin-top:25px;
+          }
+        .coluna a{
+          color:#2C2C2C;
+        }
+	.coluna img{
+	  width:320px;
+	  height:300px;
+	}    
+        .coluna { 
+          display: flex; 
+          flex-direction: column; 
+          margin-top: 20px; 
+          margin-left: auto; 
+          padding-left: 15%; 
+          gap:40px; 
+          }
+	      .perfil img{
+          max-width:100%;
+	        object-fit:contain;
+          max-height:40px;
+	        align-items:center;
+        }
+        main { 
+          display: grid; 
+          grid-template-columns: 1fr 1fr; 
+          gap: 8%; 
+          }
+        .esquerda { 
+          flex: 1; flex-direction: column; 
+          }
+    </style>
+</head>
+<body>
+    <header>
+        <span class="cabecario1">
+            <a href=""><img src="./logo.png" alt="logo"></a>
+        </span>
+        <nav class="menu-nav">
+            <span class="cabecario">
+                <a class="cabecarioa" href="">Home</a>
+            </span>
+            <span class="cabecario">
+                <a class="cabecarioa active" href="">Veículos</a>
+            </span>
+            <span class="cabecario">
+                <a href="" class="cabecarioa">Suporte</a>
+            </span>
+            <span class="cabecario">
+                <a href="" class="cabecarioa">Sobre Nós</a>
+            </span>
+        </nav>
+        <span class="perfil">
+            <a href=""><img src="perfil.jpg" alt="perfil"></a>
+        </span>
+    </header>
+    <main>
+        <section class="esquerda">
+            <img src="carro.jpg" alt="automóvel" height="700px" width="600px">
+        </section>
+        <section>
+            <span><h1 class="titulo">Confirmação de Reserva</h1></span>
+            <div class="coluna">
+                <img src="./aprovado.jpg" alt="aprovado">
+                <div class="subtitulo">Reserva Aprovada!</h2>
+                <div class="texto"><a href="">Clique aqui para entrar em contato caso tenha algum problema com a reserva</a></div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
