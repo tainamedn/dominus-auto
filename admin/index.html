@@ -26,7 +26,7 @@
             display: flex;
         }
         .cabecario1 img {
-            max-height: 40px;
+            max-height: 60px;
             width: auto;
         }
         .cabecario {
@@ -56,6 +56,12 @@
             justify-content: flex-end;
             margin-right:30px;
         }
+	.perfil img{
+	    max-width:100%;
+	    object-fit:contain;
+            max-height:40px;
+	    align-items:center;
+	}
         .menu-nav {
             display: flex;
         }
@@ -86,9 +92,22 @@
             font-family: 'Montserrat', 'Inter', sans-serif;
             color: #2C2C2C;
             font-weight:400;
-            margin-left:5%;
             font-size:15px;
+	    display:block;
+	    padding-top:20px;
+	    margin-left:4%;
         }
+	.caract-auto > div{
+	    display:flex;
+	    align-items:center;
+	    margin-bottom:15px;
+	}
+	.caract-auto img{
+	    width:auto;
+	    height:40px;
+	    margin-right:9px;
+	    object-fit:contain;
+	}
         .fichatec {
             display: flex;
             flex-direction: column;
@@ -96,7 +115,15 @@
             margin-left: auto;
             padding-left: 15%;
             gap:40px;
+	    margin-left:2%;
         }
+	.fichatec > div:not(.caract-auto):not(:last-child){
+	    display: flex;
+	    align-items:center;
+	    border-bottom: 2px solid #C5A84F;
+	    padding-bottom: 12px;
+	    width:60%;
+	}
         .reserva{
             text-decoration: none;
             color: white;
@@ -105,7 +132,8 @@
             font-weight: 590;
             background-color:#C5A84F;
             padding:10px 20px 10px 20px;
-            margin-left:20%;
+            margin-left:17%;
+	    border-radius:25px;
         }
         main {
             display: grid;
@@ -138,12 +166,12 @@
             </span>
         </nav>
         <span class="perfil">
-            <a href=""><img src="" alt="perfil"></a>
+            <a href=""><img src="./perfil.jpg" alt="perfil"></a>
         </span>
     </header>
     <main>
         <section class="esquerda">
-            <img src="" alt="automóvel">
+            <img src="./carro.jpg" alt="automóvel" height="700px" width="600px">
         </section>
         <section>
             <span><h1 class="titulo">Ficha Técnica</h1></span>
@@ -164,8 +192,8 @@
                     <span class="texto">Potência: </span><span class="item-tec">255 hp</span>
                 </div>
                 <div class="caract-auto">
-                    <div>Assento de Couro Premium</div>
-                    <div>Teto Solar Panorâmico</div>
+                    <div><img src="./carac1.jpg" alt="carac1">Assento de Couro Premium</div>
+                    <div><img src="./carac2.jpg" alt="carac2">Teto Solar Panorâmico</div>
                 </div>
                 <div><a class="reserva" href="">Reservar Veículo</a></div>
             </div>
